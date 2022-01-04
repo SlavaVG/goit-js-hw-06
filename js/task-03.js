@@ -16,21 +16,14 @@ const images = [
 
 for (const image of images) {
   const list = document.querySelector(".gallery");
-  console.log(list);
-  const lastItem = document.createElement("li");
-  console.log(lastItem);
-  lastItem.textContent = "Hallo";
-  lastItem.append(images)
-  list.append(lastItem);
-  const gop = document.createElement("img");
-  //list.after(img);
-  // const list = document.querySelector("li");
-  //const lastItem = list.createElement("img");
-  // img.src = image.url;
-  // img.alt = image.alt;
-  //img = image.url;
-  //img = image.alt;
-  //console.log(image);
-  //list.after(image);
-  //list.append(img);
+  list.id = 'grid';
+  const liEl = document.createElement("li");
+  liEl.classList.add('noList');
+  const imgEl = document.createElement("img");
+  imgEl.src = image.url;
+  imgEl.alt = image.alt;
+  imgEl.width = window.innerWidth / images.length;
+  liEl.appendChild(imgEl);
+  //console.log(liEl);
+  list.appendChild(liEl);
 }
