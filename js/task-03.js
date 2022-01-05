@@ -50,4 +50,7 @@ for (const image of images) {
   imgEl.alt = image.alt;
   liEl.appendChild(imgEl);
   list.appendChild(liEl);
+  // liEl.insertAdjacentHTML('beforeend', imgEl);
+  // list.insertAdjacentHTML('beforeend', liEl);
+
 }
