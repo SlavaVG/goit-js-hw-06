@@ -8,7 +8,7 @@ function deButtonClick() {
     counterValue.textContent--
 }
 function inButtonClick() {
-    counterValue.textContent++
+    counterValue.textContent++ 
 }
 const counterValue = document.querySelector('span')
 console.log(counterValue.textContent)
