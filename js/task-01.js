@@ -1,5 +1,5 @@
-const menuItemsByTagName = document.querySelectorAll("h2");
-console.log(`Number of categories:`, menuItemsByTagName.length);
+const meNuh2 = document.querySelectorAll("h2");
+console.log(`Number of categories:`, meNuh2.length);
 
 const meNu = document.querySelector("ul");
 for (let elem of meNu.children) {

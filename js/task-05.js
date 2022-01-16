@@ -1,12 +1,12 @@
-const formInput = document.getElementById('name-input');
-const formOutput = document.getElementById('name-output');
+const nInput = document.getElementById('name-input');
+const nOutput = document.getElementById('name-output');
 
-formInput.addEventListener('input', updateValue);
+nInput.addEventListener('input', updateValue);
 
-function updateValue(e) {
-    if (e.target.value == "") {
-        formOutput.textContent = "Anonymous";
+function updateValue(event) {
+    if (event.target.value == "") {
+        nOutput.textContent = "Anonymous";
     } else {
-        formOutput.textContent = e.target.value;
+        nOutput.textContent = event.target.value;
     }
 }

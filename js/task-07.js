@@ -1,8 +1,8 @@
-const fontToggle = document.getElementById('font-size-control');
-const textSpan = document.getElementById("text");
+const fontSize = document.getElementById('font-size-control');
+const teXt = document.getElementById("text");
 
-fontToggle.addEventListener('input', updateValue);
+fontSize.addEventListener('input', updateValue);
 
-function updateValue(e) {
-    textSpan.style.fontSize = `${e.target.value}px`;
+function updateValue(event) {
+    teXt.style.fontSize = `${event.target.value}px`;
 }

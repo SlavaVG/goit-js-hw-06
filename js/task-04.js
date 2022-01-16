@@ -1,5 +1,5 @@
-const decrimentBtnRef = document.querySelector("[data-action='decrement']");
-const inrementBtnRef = document.querySelector("[data-action='increment']");
+const deCr = document.querySelector("[data-action='decrement']");
+const inRe = document.querySelector("[data-action='increment']");
 
 let counterValue = 0;
 const increment = () => {
@@ -11,5 +11,5 @@ const decrement = () => {
   document.getElementById("value").textContent = counterValue;
 };
 
-inrementBtnRef.addEventListener("click", increment);
-decrimentBtnRef.addEventListener("click", decrement);
+inRe.addEventListener("click", increment);
+deCr.addEventListener("click", decrement);
